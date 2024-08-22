@@ -38,6 +38,9 @@ class HomePage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  const SizedBox(
+                    height: 20,
+                  ),
                   Image.file(
                     snapshot.data!,
                   ),
@@ -45,9 +48,13 @@ class HomePage extends StatelessWidget {
               ),
             );
           } else if (snapshot.hasError) {
-            return const Center(child: Text('Error loading image'));
+            return const Center(
+              child: Text('Error loading image'),
+            );
           }
-          return const Center(child: CircularProgressIndicator());
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
         },
       ),
     );
