@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
     String url =
         'https://i.pinimg.com/736x/c3/d3/15/c3d315f7216dcf8b320e8825a9f5d126.jpg';
     return Scaffold(
+      backgroundColor: Colors.purple[50],
       appBar: AppBar(
         backgroundColor: Colors.purple[200],
         centerTitle: true,
