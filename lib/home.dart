@@ -33,7 +33,8 @@ class HomePage extends StatelessWidget {
                   const Text(
                     'Example Picture Using Flutter cache: ',
                     style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   Image.file(
